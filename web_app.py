@@ -13,10 +13,10 @@ st.set_page_config(page_title="Health Hunch",
 # getting the working directory of the main.py
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
-model = joblib.load("C:/Users/annbl/OneDrive/Documents/IBM_proj/pickle files/model.pkl")
-symptom_encoders = joblib.load("C:/Users/annbl/OneDrive/Documents/IBM_proj/pickle files/symptom_encoder.pkl")
-disease_encoder = joblib.load("C:/Users/annbl/OneDrive/Documents/IBM_proj/pickle files/disease_encoder.pkl")
-X_columns = joblib.load("C:/Users/annbl/OneDrive/Documents/IBM_proj/pickle files/X_column.pkl")
+model = joblib.load("pickle files/model.pkl")
+symptom_encoders = joblib.load("pickle files/symptom_encoder.pkl")
+disease_encoder = joblib.load("pickle files/disease_encoder.pkl")
+X_columns = joblib.load("pickle files/X_column.pkl")
 
 image = Image.open("C:/Users/annbl/OneDrive/Documents/IBM_proj/logo.png")
 col1, col2 = st.columns([0.4,0.5])
@@ -145,8 +145,8 @@ def predict_disease(symptoms):
 
 
 if selected == "About":
-    #image = Image.open("C:/Users/annbl/OneDrive/Documents/IBM_proj/Images/Landing Page Clip.gif")
-    st.image("C:/Users/annbl/OneDrive/Documents/IBM_proj/Images/Landing Page Clip.gif")
+    #image = Image.open("Images/Landing Page Clip.gif")
+    st.image("Images/Landing Page Clip.gif")
     
     st.markdown(""" """)
     st.markdown(""" """)
@@ -162,12 +162,12 @@ if selected == "About":
     with col5:
         st.markdown("##### Welcome to Health Hunch, a Symptom Analysis and Disease Prediction Dashboard, your comprehensive tool for understanding and managing health symptoms and conditions. This dashboard is designed to help individuals gain insights into various diseases and their symptoms, empowering you with the knowledge to make informed decisions about your health.")
     with col6:
-        st.image("C:/Users/annbl/OneDrive/Documents/IBM_proj/Images/about.gif", use_column_width=True)
+        st.image("Images/about.gif", use_column_width=True)
         st.markdown(""" """)
         st.markdown(""" """)
 
     with col3:
-        st.image("C:/Users/annbl/OneDrive/Documents/IBM_proj/Images/Self Protection.gif", use_column_width=True)
+        st.image("Images/Self Protection.gif", use_column_width=True)
         st.markdown(""" """)
     with col4:
         st.header("Key Features")
@@ -190,10 +190,10 @@ if selected == "About":
                     - This feature is particularly useful for those experiencing multiple or vague symptoms, as it helps narrow down potential health issues and provides a starting point for further research or consultation with healthcare professionals.""")
         st.markdown(""" """)
     with col8:
-        st.image("C:/Users/annbl/OneDrive/Documents/IBM_proj/Images/Search.gif", use_column_width=True)
+        st.image("Images/Search.gif", use_column_width=True)
     
     with col9:
-        st.image("C:/Users/annbl/OneDrive/Documents/IBM_proj/Images/Explore_Diseases.jpg", use_column_width=True)
+        st.image(Images/Explore_Diseases.jpg", use_column_width=True)
     with col10:
         st.markdown("""**Explore Diseases:** Access detailed information on a wide range of diseases and conditions. Understand the symptoms, causes, and treatment options for each condition.""")
         st.markdown("""
@@ -210,7 +210,7 @@ if selected == "About":
                     - This powerful tool supports evidence-based decision-making and contributes to improving overall health outcomes.""")
         st.markdown(""" """)
     with col12:
-        st.image("C:/Users/annbl/OneDrive/Documents/IBM_proj/Images/Data Analysis.gif", use_column_width=True)
+        st.image("Images/Data Analysis.gif", use_column_width=True)
         
     with col13:
         st.image("C:/Users/annbl/OneDrive/Documents/IBM_proj/Images/Online Health.gif", use_column_width=True)
