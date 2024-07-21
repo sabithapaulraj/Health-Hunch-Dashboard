@@ -193,7 +193,7 @@ if selected == "About":
         st.image("Images/Search.gif", use_column_width=True)
     
     with col9:
-        st.image(Images/Explore_Diseases.jpg", use_column_width=True)
+        st.image("Images/Explore_Diseases.jpg", use_column_width=True)
     with col10:
         st.markdown("""**Explore Diseases:** Access detailed information on a wide range of diseases and conditions. Understand the symptoms, causes, and treatment options for each condition.""")
         st.markdown("""
@@ -213,7 +213,7 @@ if selected == "About":
         st.image("Images/Data Analysis.gif", use_column_width=True)
         
     with col13:
-        st.image("C:/Users/annbl/OneDrive/Documents/IBM_proj/Images/Online Health.gif", use_column_width=True)
+        st.image("Images/Online Health.gif", use_column_width=True)
     with col14:
         st.markdown("""**Self-Diagnosis:** Empower yourself with our advanced self-diagnosis tool. Simply input the symptoms you are experiencing, and our system will analyze them to predict possible illnesses you may be suffering from. This feature leverages a highly accurate Machine Learning model that boasts a 93% accuracy rate, ensuring reliable and insightful predictions.""")
         st.markdown("""This self-diagnosis feature is a significant advancement in personal healthcare management, providing users with a powerful tool to better understand their symptoms and potential health issues. With the integration of a highly accurate Machine Learning model, it offers reliable predictions and comprehensive health information to support your well-being. """)
@@ -317,8 +317,8 @@ if selected == "About":
 
 
 if selected == "Understanding our Data":
-    df1 = pd.read_csv("C:/Users/annbl/OneDrive/Documents/IBM_proj/dataset.csv")
-    df2 = pd.read_csv("C:/Users/annbl/OneDrive/Documents/IBM_proj/Symptom-severity.csv")
+    df1 = pd.read_csv("dataset.csv")
+    df2 = pd.read_csv("Symptom-severity.csv")
     
     st.markdown("#### Data visualisation in Symptoms and disease Dataset")
     st.write(df1.head(10))
