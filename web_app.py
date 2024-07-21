@@ -13,12 +13,12 @@ st.set_page_config(page_title="Health Hunch",
 # getting the working directory of the main.py
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
-model = joblib.load("model.pkl")
-symptom_encoders = joblib.load("symptom_encoder.pkl")
-disease_encoder = joblib.load("disease_encoder.pkl")
-X_columns = joblib.load("X_column.pkl")
+model = joblib.load("pickle files/model.pkl")
+symptom_encoders = joblib.load("pickle files/symptom_encoder.pkl")
+disease_encoder = joblib.load("pickle files/disease_encoder.pkl")
+X_columns = joblib.load("pickle files/X_column.pkl")
 
-image = Image.open("C:/Users/annbl/OneDrive/Documents/IBM_proj/logo.png")
+image = Image.open("logo.png")
 col1, col2 = st.columns([0.4,0.5])
 with col1:
     st.image(image,width=350)
